@@ -1,4 +1,4 @@
-# GF22nm FD-SOI SerDes Transmitter
+# 22nm FD-SOI SerDes Transmitter
 
 **Bachelor's Thesis Technical Portfolio**  
 **Universitat Autònoma de Barcelona (UAB) · IMB-CNM, CSIC**  
@@ -6,7 +6,7 @@
 
 ## Overview
 
-This project presents the transistor-level design and circuit-level verification of a high-speed differential SerDes transmitter implemented in GF22nm FD-SOI technology.
+This project presents the transistor-level design and circuit-level verification of a high-speed differential SerDes transmitter implemented in 22nm FD-SOI technology.
 
 The transmitter combines a **Push-Pull Current-Mode Logic (PPCML)** output stage with a configurable **three-tap feed-forward equalizer (FFE)**. The complete architecture also includes biasing circuitry, 0.8 V-to-1.8 V level shifters, common-mode feedback (CMFB), modified TSPC-based control logic and power-down functionality.
 
@@ -16,7 +16,7 @@ The circuit was designed using **Cadence Virtuoso** and verified using **Cadence
 
 | Parameter | Description |
 |---|---|
-| Technology | GF22nm FD-SOI |
+| Technology | 22nm FD-SOI |
 | Design environment | Cadence Virtuoso |
 | Simulator | Cadence Spectre |
 | Output architecture | Differential PPCML |
