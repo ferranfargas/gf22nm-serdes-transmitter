@@ -62,7 +62,11 @@ The configurable de-emphasis functionality was also verified at the transmitter 
 
 ### Configurable de-emphasis
 
-![Configurable de-emphasis verification](figures/deemphasis-verification.png)
+<p align="center">
+  <img src="figures/deemphasis-verification.png"
+       alt="Configurable de-emphasis verification"
+       width="600">
+</p>
 
 The different output levels confirm the functional contribution of the main cursor and the independently configurable post-cursor branches.
 
