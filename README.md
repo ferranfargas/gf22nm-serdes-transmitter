@@ -28,6 +28,7 @@ The circuit was designed using **Cadence Virtuoso** and verified using **Cadence
 | Verification stage | Nominal pre-layout |
 
 ## Transmitter Architecture
+![GF22nm FD-SOI SerDes transmitter architecture](figures/transmitter-architecture.png)
 
 The transmitter consists of:
 
@@ -45,6 +46,8 @@ The three PPCML branches implement the main cursor and two post-cursors, with th
 
 Verification was performed at both block and top level using Cadence Spectre.
 
+![Top-level verification setup](figures/verification-setup.png)
+
 The complete simulation environment included a differential transmission-line model and 50-ohm terminations. Functional and transient simulations were used to verify the control logic, voltage-domain conversion and differential output stage.
 
 Eye diagrams were evaluated at **1, 5, 7 and 10 Gb/s** under nominal pre-layout conditions.
@@ -57,7 +60,23 @@ As the data rate increased, the available timing margin and output amplitude dec
 
 The configurable de-emphasis functionality was also verified at the transmitter output by combining the main cursor with independently configurable post-cursor branches.
 
+### Configurable de-emphasis
+
+![Configurable de-emphasis verification](figures/deemphasis-verification.png)
+
+The different output levels confirm the functional contribution of the main cursor and the independently configurable post-cursor branches.
+
 > The de-emphasis verification demonstrates functional generation of the equalized waveform. No claim is made regarding compliance with a specific communication standard or optimum equalization for a particular channel.
+
+### Eye-diagram evolution
+
+| 1 Gb/s | 5 Gb/s |
+|---|---|
+| ![1 Gb/s eye diagram](figures/eye-diagram-1gbps.png) | ![5 Gb/s eye diagram](figures/eye-diagram-5gbps.png) |
+
+| 7 Gb/s | 10 Gb/s |
+|---|---|
+| ![7 Gb/s eye diagram](figures/eye-diagram-7gbps.png) | ![10 Gb/s eye diagram](figures/eye-diagram-10gbps.png) |
 
 ## Future Work
 
