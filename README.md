@@ -42,6 +42,52 @@ The transmitter consists of:
 
 The three PPCML branches implement the main cursor and two post-cursors, with their differential currents combined at the transmitter output.
 
+## Representative Circuit Blocks
+
+The following simplified transistor-level schematics illustrate some of the main circuit blocks implemented in the transmitter.
+
+<table>
+<tr>
+<td width="50%" align="center">
+  <strong>PPCML Output Stage</strong><br><br>
+  <img src="figures/ppcml-output-stage.png" width="420"><br><br>
+  Differential Push-Pull Current-Mode Logic output stage used to drive the transmission line.
+</td>
+
+<td width="50%" align="center">
+  <strong>Three-Tap Feed-Forward Equalizer</strong><br><br>
+  <img src="figures/three-tap-ffe.png" width="500"><br><br>
+  Three parallel PPCML branches implementing the main cursor and two post-cursor contributions.
+</td>
+</tr>
+
+<tr>
+<td width="50%" align="center">
+  <strong>0.8 V-to-1.8 V Level Shifter</strong><br><br>
+  <img src="figures/level-shifter.png" width="420"><br><br>
+  Regenerative level shifter interfacing the 0.8 V control logic with the 1.8 V output stage.
+</td>
+
+<td width="50%" align="center">
+  <strong>Modified TSPC Flip-Flop</strong><br><br>
+  <img src="figures/modified-tspc-flip-flop.png" width="480"><br><br>
+  Modified True Single-Phase Clock cell used to generate present and delayed data samples for the FFE control logic.
+</td>
+</tr>
+</table>
+
+<p align="center">
+  <strong>Common-Mode Feedback Operational Amplifier</strong>
+</p>
+
+<p align="center">
+  <img src="figures/cmfb-opamp.png" width="500">
+</p>
+
+<p align="center">
+  Operational amplifier used in the common-mode feedback loop to regulate the differential output common-mode voltage.
+</p>
+
 ## Verification Methodology
 
 Verification was performed at both block and top level using Cadence Spectre.
